@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Navbar from '../../components/Navbar';
 import QuoteDisplay from '../../components/QuoteDisplay';
 
 const RandomQuotePage = () => {
@@ -16,7 +17,12 @@ const RandomQuotePage = () => {
     fetchRandomQuote();
   }, []);
 
-  return <QuoteDisplay title="Random Quote" quote={quote} />;
+  return (
+    <>
+      <Navbar />
+      <QuoteDisplay title="Random Quote" quote={quote} />
+    </>
+  );
 };
 
 export default RandomQuotePage;

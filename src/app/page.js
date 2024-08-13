@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Navbar from '../components/Navbar';
 import QuoteDisplay from '../components/QuoteDisplay';
 
 const HomePage = () => {
@@ -16,7 +17,12 @@ const HomePage = () => {
     fetchQuoteOfTheDay();
   }, []);
 
-  return <QuoteDisplay title="Quote of the Day" quote={quote} />;
+  return (
+    <>
+      <Navbar />
+      <QuoteDisplay title="Quote of the Day" quote={quote} />
+    </>
+  );
 };
 
 export default HomePage;
