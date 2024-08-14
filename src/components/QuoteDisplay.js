@@ -12,8 +12,7 @@ const QuoteDisplay = ({ title, quote }) => {
         setImageUrl(imageResponse);
       };
 
-      fetchImage(); // This runs only when the quote is first set
-    }
+      fetchImage();     }
   }, [quote]);
 
   if (!quote) {

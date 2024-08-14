@@ -18,8 +18,8 @@ const RandomQuotePage = () => {
       }
     };
 
-    fetchRandomQuote(); // Ensure this function is only called once on mount
-  }, []); // Empty dependency array ensures this runs only on mount
+    fetchRandomQuote(); 
+  }, []);
   return (
     <>
       <Navbar />

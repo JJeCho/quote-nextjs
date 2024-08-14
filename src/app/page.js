@@ -9,9 +9,13 @@ const HomePage = () => {
 
   useEffect(() => {
     const fetchQuoteOfTheDay = async () => {
-      const res = await fetch('/api/quote-of-the-day');
-      const data = await res.json();
-      setQuote(data);
+      try {
+        const res = await fetch('/api/quote-of-the-day');
+        const data = await res.json();
+        setQuote(data);
+      } catch (error) {
+        console.error("Error fetching quote of the day:", error);
+      }
     };
 
     fetchQuoteOfTheDay();
