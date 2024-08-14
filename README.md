@@ -5,6 +5,8 @@ This project is a simple "Quote of the Day" application built with Next.js and s
 
 Try it here: https://quote-nextjs-49ljtylyx-jjechos-projects.vercel.app/
 
+![A quote with an AI Generated Image](/capture.png)
+
 ## Features
 
 - **Next.js**: A React framework for building fast web applications.
