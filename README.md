@@ -3,7 +3,7 @@
 
 This project is a simple "Quote of the Day" application built with Next.js and styled using Tailwind CSS. The application fetches and displays a random quote or the quote of the day and displays an AI Generated Image using the quote as a basic prompt.
 
-Try it here: https://quote-nextjs-2eor0qf77-jjechos-projects.vercel.app/
+Try it here: https://quote-nextjs-five.vercel.app/
 
 ![A quote with an AI Generated Image](/capture.png)
 
