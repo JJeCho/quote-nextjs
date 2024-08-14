@@ -9,14 +9,17 @@ const RandomQuotePage = () => {
 
   useEffect(() => {
     const fetchRandomQuote = async () => {
-      const res = await fetch('https://api.quotable.io/random');
-      const data = await res.json();
-      setQuote(data.content);
+      try {
+        const res = await fetch('https://api.quotable.io/random');
+        const data = await res.json();
+        setQuote(data);
+      } catch (error) {
+        console.error("Error fetching random quote:", error);
+      }
     };
 
-    fetchRandomQuote();
-  }, []);
-
+    fetchRandomQuote(); // Ensure this function is only called once on mount
+  }, []); // Empty dependency array ensures this runs only on mount
   return (
     <>
       <Navbar />

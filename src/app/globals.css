@@ -6,7 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --timberwolf: #dbcdc6ff;
+  --champagne-pink: #ead7d1ff;
+  --amaranth-pink: #dd99bbff;
+  --chinese-violet: #7b506fff;
+  --dark-purple: #1f1a38ff;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

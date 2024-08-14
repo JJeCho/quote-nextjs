@@ -11,7 +11,7 @@ const HomePage = () => {
     const fetchQuoteOfTheDay = async () => {
       const res = await fetch('/api/quote-of-the-day');
       const data = await res.json();
-      setQuote(data.content);
+      setQuote(data);
     };
 
     fetchQuoteOfTheDay();
